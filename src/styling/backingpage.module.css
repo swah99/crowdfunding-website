@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 75px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(192, 192, 192, 0.753);
+}
+
+.wholeBacking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: white;
+  padding: 35px;
+  border-radius: 15px;
+  margin-top: 175px;
+}
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.closeBtn {
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  left: 35px;
+}
+.pledge {
+  width: 450px;
+  border: 1px solid rgba(192, 192, 192, 0.753);
+  border-radius: 10px;
+  padding: 30px;
+}
+.bamboo,
+.blackEdition,
+.mahogany {
+  width: 450px;
+  border: 1px solid rgba(192, 192, 192, 0.753);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 25px;
+}
+.greenTitles {
+  color: rgb(44, 184, 149);
+}
+.pledgeEntry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bamboo > .pledgeEntry > input {
+  position: relative;
+  left: 40px;
+}
+.blackEdition > .pledgeEntry > input {
+  position: relative;
+  left: 40px;
+}
+.mahogany > .pledgeEntry > input {
+  position: relative;
+  left: 40px;
+}
+.errorMessage {
+  color: red;
+}
+#bambooStrong {
+  position: relative;
+  left: 35px;
+  font-size: 20px;
+}
+#blackStrong {
+  position: relative;
+  left: 25px;
+  font-size: 20px;
+}
+#mahoganyStrong {
+  position: relative;
+  left: 10px;
+  font-size: 20px;
+}
+.bamboo > .titles > .greenTitles {
+  position: relative;
+  right: 25px;
+}
+.blackEdition > .titles > .greenTitles {
+  position: relative;
+  right: 20px;
+}
+.mahogany > .titles > .greenTitles {
+  position: relative;
+  right: 8px;
+}
+.mahogany {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.highlight {
+  border-color: rgb(44, 184, 149);
+}
+
+@media (max-width: 425px) {
+  .wholeBacking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 80px;
+  }
+  .pledge {
+    width: 265px;
+    border: 1px solid rgba(192, 192, 192, 0.753);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .bamboo,
+  .blackEdition,
+  .mahogany {
+    width: 265px;
+    border: 1px solid rgba(192, 192, 192, 0.753);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 25px;
+  }
+  .titles {
+    display: block;
+    font-size: 18px;
+  }
+  .bamboo .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+
+  button {
+    background-color: rgb(44, 184, 149);
+    color: white;
+    width: 147px;
+    height: 38px;
+    border-radius: 18px;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 63px;
+    bottom: 35px;
+  }
+  .bamboo > .pledgeEntry > input {
+    position: relative;
+    left: -100px;
+  }
+  .blackEdition > .pledgeEntry > input {
+    position: relative;
+    left: -90px;
+  }
+  .pledgeEntry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #bambooStrong,
+  #blackStrong,
+  #mahoganyStrong {
+    position: relative;
+    left: 0px;
+    font-size: 20px;
+  }
+
+  .mahogany > .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+  .blackEdition > .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+
+  .blackEdition > .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+  .closeBtn {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    left: 220px;
+    bottom: 60px;
+  }
+  .backing > p {
+    margin-top: -40px;
+  }
+}
+@media (max-width: 320px) {
+  .wholeBacking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 80px;
+  }
+  .pledge {
+    width: 200px;
+    border: 1px solid rgba(192, 192, 192, 0.753);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .bamboo,
+  .blackEdition,
+  .mahogany {
+    width: 200px;
+    border: 1px solid rgba(192, 192, 192, 0.753);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 25px;
+  }
+  .titles {
+    display: block;
+    font-size: 18px;
+  }
+  .bamboo .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+
+  button {
+    background-color: rgb(44, 184, 149);
+    color: white;
+    width: 115px;
+    height: 35px;
+    border-radius: 18px;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 63px;
+    bottom: 35px;
+  }
+  .bamboo > .pledgeEntry > input {
+    position: relative;
+    left: -70px;
+  }
+  .blackEdition > .pledgeEntry > input {
+    position: relative;
+    left: -70px;
+  }
+  .pledgeEntry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #bambooStrong,
+  #blackStrong,
+  #mahoganyStrong {
+    position: relative;
+    left: 0px;
+    font-size: 20px;
+  }
+
+  .mahogany > .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+  .blackEdition > .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+
+  .blackEdition > .titles > .greenTitles {
+    position: relative;
+    right: 0px;
+  }
+  .closeBtn {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    left: 160px;
+    bottom: 60px;
+  }
+  .backing > p {
+    margin-top: -40px;
+  }
+}

@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+body {
+  background-image: url("../image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 1300px 270px;
+  font-family: "Lato", sans-serif;
+  background-color: whitesmoke;
+}
+header {
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  gap: 550px;
+}
+.menuIcon {
+  display: none;
+}
+.text {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  gap: 40px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/*  intro */
+.intro {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 35px;
+  padding-bottom: 15px;
+}
+.intro > button {
+  position: relative;
+  top: 20px;
+  right: 140px;
+}
+.mastercraftLogo {
+  position: relative;
+  top: 80px;
+  left: 470px;
+}
+.bookmark {
+  position: relative;
+  top: -18px;
+  right: -320px;
+  background-color: grey;
+  width: 145px;
+  height: 38px;
+  border-radius: 18px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 22px;
+}
+button {
+  background-color: rgb(44, 184, 149);
+  color: white;
+  width: 147px;
+  height: 38px;
+  border-radius: 18px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*backing*/
+.backing {
+  height: 115px;
+  width: 490px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.backingAmnt {
+  display: flex;
+  justify-content: space-between;
+}
+.backingAmnt > div > strong {
+  font-size: 25px;
+}
+.progressBar {
+  height: 12px;
+  width: 475px;
+  background-color: rgba(192, 192, 192, 0.753);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.innerBar {
+  height: 12px;
+  width: 200px;
+  background-color: rgb(44, 184, 149);
+  border-radius: 8px;
+}
+.rightB {
+  border-right: 1px solid rgba(0, 0, 0, 0.336);
+  padding-right: 45px;
+}
+
+/*about*/
+.wholeAbout {
+  /* height: 300px; */
+  width: 480px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 35px;
+}
+.bambooStand,
+.blackEditionStand,
+.mahoganySpecialEdition {
+  width: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.336);
+  border-radius: 10px;
+  padding: 15px;
+}
+.aboutTitles,
+.donorsandbtn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.donorsLeft > span > strong {
+  font-size: 25px;
+}
+.bambooStand > p {
+  margin-top: 0px;
+}
+.greenTitles {
+  color: rgb(44, 184, 149);
+}
+.blackEditionStand,
+.mahoganySpecialEdition {
+  margin-top: 25px;
+}
+.outOfStock {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media (max-width: 425px) {
+  body {
+    background-image: url("../image-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 425px 150px;
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+  }
+  header {
+    color: whitesmoke;
+  }
+  .wholeAbout {
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px;
+  }
+  .bambooStand,
+  .blackEditionStand,
+  .mahoganySpecialEdition {
+    width: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .rewardBtn {
+    position: relative;
+    left: -60px;
+    top: 30px;
+  }
+  .mahoganyRewardBtn {
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .backing {
+    height: 115px;
+
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .progressBar {
+    width: 330px;
+  }
+  .rightB {
+    border-right: 1px solid rgba(0, 0, 0, 0.336);
+    padding-right: 12px;
+  }
+  .intro > button {
+    position: relative;
+    top: 20px;
+    left: -100px;
+  }
+  .mastercraftLogo {
+    position: absolute;
+    top: 25px;
+    left: 185px;
+  }
+  .intro {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px;
+    padding-bottom: 15px;
+    width: 330px;
+  }
+  .bookmark {
+    position: relative;
+    top: -18px;
+    right: -180px;
+    background-color: grey;
+    width: 145px;
+    height: 38px;
+    border-radius: 18px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 22px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+    margin-top: -60px;
+  }
+  .menuIcon {
+    display: block;
+    position: absolute;
+    left: 380px;
+    font-size: 25px;
+    /* bottom: 160px; */
+
+    top: 10px;
+  }
+  .closeIcon {
+    display: block;
+    position: absolute;
+    left: 380px;
+    font-size: 25px;
+    /* bottom: 160px; */
+
+    top: 10px;
+  }
+  .pageTitle {
+    position: absolute;
+    left: 17px;
+    bottom: 775px;
+  }
+  .menuBar {
+    flex-direction: column;
+    position: absolute;
+    left: 298px;
+    bottom: 585px;
+    background-color: whitesmoke;
+    color: black;
+    width: 115px;
+    border-radius: 10px;
+    z-index: 1;
+    height: 160px;
+  }
+  .menuBar > p {
+    margin-bottom: -55px;
+  }
+}
